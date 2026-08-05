@@ -1,7 +1,7 @@
 # Restaurant Operations Simulation
 
 ## Overview
-Developed a discrete-event simulation of a five-station restaurant operation using Simio to evaluate how staffing decisions and order volume affect operational performance.
+Developed a discrete-event simulation of a five-station restaurant operation using Simio to analyze 16,000 historical customer orders and evaluate staffing decisions under varying demand conditions.
 
 The model represents both in-person and online ordering workflows using historical transaction data and realistic operating logic.
 
