@@ -2,13 +2,13 @@
 
 ## Overview
 
-Developed a discrete-event simulation of a five-station restaurant operation using Simio to analyze 16,000 historical customer orders and evaluate staffing decisions under varying demand conditions.
+Developed a discrete-event simulation of a five-station restaurant operation using Simio to evaluate how operational policies influence customer flow and system performance. The model simulated **16,000 customer orders** across both in-person and online ordering workflows using real operational data.
 
 ---
 
 ## Objective
 
-The objective of this project was to evaluate how staffing policies and customer demand patterns affect restaurant throughput, queue lengths, resource utilization, and customer time in system while maintaining a 90% service-level target.
+The objective of this project was to evaluate how changes in customer demand allocation and operational policies affect restaurant throughput, queue lengths, resource utilization, and customer time in system while maintaining a **90% service-level target**.
 
 ---
 
@@ -26,29 +26,28 @@ The objective of this project was to evaluate how staffing policies and customer
 
 - Five sequential service stations
 - Separate in-person and online customer workflows
-- Hourly arrival-rate scheduling
-- Stochastic service-time distributions
+- Time-varying customer arrival schedules
+- Station-specific service time distributions
 - Resource-constrained worker assignments
 - Customer balking behavior
 - Promise-time logic for online orders
-- Multiple simulation replications
+- Priority queuing
+- Multiple simulation replications for scenario comparison
 - Staffing scenario analysis
 
 ---
 
 ## Simio Model
 
-The simulation models a five-station restaurant operation that processes both in-person and online customer orders while accounting for resource constraints, worker movement, and queuing behavior.
+The facility model represents customer flow through five sequential processing stations while incorporating worker movement, queuing behavior, and operational constraints.
 
 ![Simio Model](simio-model.png)
-
-The facility model represents customer flow through five sequential processing stations while incorporating worker movement, queuing behavior, and operational constraints.
 
 ---
 
 ## Process Flow
 
-The process flow illustrates how customer orders move through the restaurant, including separate paths for in-person customers, prepaid online orders, and online customers paying in person.
+The process flow illustrates how customer orders move through the restaurant, including separate paths for in-person customers, prepaid online orders, and online customers paying in person. It helped capture customer movement from order placement through meal completion while accounting for operational decision points and routing logic.
 
 ![Process Flow](process-flow.png)
 
@@ -56,7 +55,7 @@ The process flow illustrates how customer orders move through the restaurant, in
 
 ## High-Level Process Map
 
-This high-level process map summarizes the end-to-end operational workflow from customer arrivals through order completion and restaurant exit.
+The process map summarizes the end-to-end operational workflow from customer arrivals through order completion and restaurant exit.
 
 ![High Level PMAP](high-level-pmap.png)
 
@@ -64,7 +63,14 @@ This high-level process map summarizes the end-to-end operational workflow from 
 
 ## Data Analysis
 
-Historical restaurant data covering a 30-day period was analyzed to determine arrival rates and service-time distributions for the simulation model.
+Historical restaurant data spanning a **30-day** period was analyzed to characterize customer demand and generate simulation inputs.
+
+The analysis included:
+
+- Time-varying customer arrival patterns
+- Station specific processing-time distributions
+- Order-type demand allocation
+- Simulation input parameter development
 
 ### Hourly Arrival Analysis
 
@@ -76,11 +82,22 @@ Historical restaurant data covering a 30-day period was analyzed to determine ar
 
 ---
 
-## Key Experiment Results
+## Simulation Experiments
 
-Simulation experiments compared the existing operation against a scenario where 90% of online customers prepaid before arriving.
+**30** independent simulation replications were conducted to compare the restaurant's existing operation against an alternative operating policy that favored online ordering.
 
-Increasing the proportion of prepaid online orders substantially reduced congestion at the payment station, resulting in lower customer time in system and improved overall operational performance.
+Performance was evaluated using key operational metrics including:
+
+- Customer TIS
+- Queue lengths
+- Resource utilizatiin
+- Service-level performance
+
+---
+
+## Key Results
+
+The proposed operating policy substantially improved customer flow while maintaining **90% service-level target**.
 
 | Metric | Original System | Proposed System |
 |---------|----------------:|----------------:|
