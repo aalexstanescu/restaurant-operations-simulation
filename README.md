@@ -46,3 +46,17 @@ The objective of this project was to evaluate operational performance under diff
 
 - FinalSimioFreshMexProject.spfx — Simio simulation model
 - SimioFreshMexDataset.xlsx — Dataset used for simulation inputs
+
+---
+
+## Note
+
+This simulation was completed as part of a team project.
+
+My primary contributions included:
+- Building the Simio simulation model
+- Developing the simulation logic
+- Analyzing operational performance
+- Conducting simulation experiments
+
+The attached report was produced collaboratively by the project team.
