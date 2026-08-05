@@ -40,7 +40,7 @@ The objective of this project was to evaluate how staffing policies and customer
 
 The simulation models a five-station restaurant operation that processes both in-person and online customer orders while accounting for resource constraints, worker movement, and queuing behavior.
 
-![Simio Model](images/simio-model.png)
+![Simio Model](simio-model.png)
 
 The facility model represents customer flow through five sequential processing stations while incorporating worker movement, queuing behavior, and operational constraints.
 
@@ -50,7 +50,7 @@ The facility model represents customer flow through five sequential processing s
 
 The process flow illustrates how customer orders move through the restaurant, including separate paths for in-person customers, prepaid online orders, and online customers paying in person.
 
-![Process Flow](images/process-flow.png)
+![Process Flow](process-flow.png)
 
 ---
 
@@ -58,7 +58,7 @@ The process flow illustrates how customer orders move through the restaurant, in
 
 This high-level process map summarizes the end-to-end operational workflow from customer arrivals through order completion and restaurant exit.
 
-![High Level PMAP](images/high-level-pmap.png)
+![High Level PMAP](high-level-pmap.png)
 
 ---
 
@@ -68,11 +68,11 @@ Historical restaurant data covering a 30-day period was analyzed to determine ar
 
 ### Hourly Arrival Analysis
 
-![Arrival Analysis](images/arrival-analysis.png)
+![Arrival Analysis](arrival-analysis.png)
 
 ### Service Time Analysis
 
-![Distribution Analysis](images/distribution-analysis.png)
+![Distribution Analysis](distribution-analysis.png)
 
 ---
 
@@ -88,7 +88,7 @@ Increasing the proportion of prepaid online orders substantially reduced congest
 | Pay Station Queue Length | 0.100 | 0.002 |
 | Pay Station Utilization | 29.14% | 6.16% |
 
-![Experiment Results](images/experiment-results.png)
+![Experiment Results](experiment-results.png)
 
 ---
 
